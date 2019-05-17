@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content="Recipes for all diets and preferences." />
+    <title> Recipe App | Welcome</title>
+    <link rel="stylesheet" href="./css/style.css" />
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="brand">
+                <h1><span class="highlight">Recipe</span>Manager</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li class="current"><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="showcase">
+        <div class="container">
+            <h1> Recipes That Fit Everybody's Needs</h1>
+            <p>From dietary restrictions to dietary preferences- We have it all!  </p>
+        </div>
+    </section>
+
+    <section id="search">
+        <div class="container">
+            <h1>Search a Recipe </h1>
+            <!--Add action in form tags-->
+            <form action="engine.php" method="get" target="_self">
+                <input type="search" id ="srch" name = "search_inp" placeholder="Enter Recipe Name" />
+                <button type="submit" class="button_1">Search</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="browse">
+        <div class="container">
+            <h1>Browse Our Recipes </h1>
+            <!--Add action in form tags-->
+            <form method="GET" action="./browse_page.php">
+                <button type="submit" class="button_2"> Browse</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="boxes">
+        <div class="container">
+            <div class="box">
+                <img src="./image/logo_diet.jpg" />
+                <h3>Dietary Restrictions</h3>
+                <p>Find recipes based on diets you follow, or allergies you have.</p>
+            </div>
+            <div class="box">
+                <img src="./image/logo_budget.jpg" />
+                <h3>Budget Friendly</h3>
+                <p>Whether you have a limited budget or not, we can help!</p>
+            </div>
+            <div class="box">
+                <img src="./image/logo_portion.jpg" />
+                <h3>Smart Portioning</h3>
+                <p>We guide you to the exact amount of food you want to make, so you can avoid wasting food.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>Group 8 Web Design, Copyright &copy; 2019</footer>
+</body>
+</html>
